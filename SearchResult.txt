@@ -1,0 +1,41 @@
+able NOT found. Searching (bipin and bipin).
+
+bipin and bipin found in paragraph(s): 
+0, 94, 95, 96, 97
+Paragraph(s) that contain bipin and bipin:
+0
+The State of Data
+Bipin C. Desai
+Concordia University
+Montreal, QC, H3G 1M8
+Canada
+1 514 848 2424
+BipinC.Desai@concordia.ca
+
+94
+[5] Bipin C. Desai, ``Report of the Navigation Issues Workshop'',
+Computer Networks and ISDN Systems, Vol. 27-2, November
+1994, pp. 332-333. (Earlier version available from:
+http://users.encs.concordia.ca/~bcdesai/web-publ/navigationissues.html)
+
+95
+[6] Robert Caillau, Bipin C. Desai, ``Report of the Priorities
+Workshop'', Computer Networks and ISDN Systems, Vol. 27-2,
+November 1994, pp. 334-336. (Earlier version available from:
+http://users.encs.concordia.ca/~bcdesai/web-publ/priorityissues.html)
+
+96
+[7] Bipin C. Desai, (ed) ``Proceedings of the WWW III Workshop
+on Web-wide Indexing/Semantic Header or Cover Page'',
+Darmstadt, Germany, April 1995, also
+http://www.igd.fhg.de/www/www95/proceedings/workshops/works
+hop-A/workshop-A.ps
+
+97
+[8] Bipin C. Desai, ``Indexing and Searching Virtual Libraries'',
+An invited refereed white paper prepared for the CIC-Forum on
+'America in the Age of Information', in Compendium of Draft
+White Papers, Bethesda, MD, July, 1995, pp. 87-90,
+http://users.encs.concordia.ca/~bcdesai/web-publ/www3wrkA/workshop-a.html
+
+able is a noise word.

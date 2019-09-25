@@ -1,0 +1,1181 @@
+The State of Data
+Bipin C. Desai
+Concordia University
+Montreal, QC, H3G 1M8
+Canada
+1 514 848 2424
+BipinC.Desai@concordia.ca
+
+Abstract
+We are currently experiencing an extraordinary acceleration in the
+growth rate of digital data. One of the reasons for this increase is
+the digitization of virtually all communications and records. This
+exponential growth is evidenced by the fact that the sum total of
+data produced in the last year or two would exceed all data that
+existed in digital form prior to that time. Just as the Industrial
+Revolution created an entirely new urban way of life for what is
+now more than half of the population of the planet, the Big Data
+revolution will dramatically alter the ways in which we interact,
+not only with each other but with all of the institutions which
+mediate our lives. Our age has come to be known as the era of Big
+Data and we are only beginning to understand its opportunities
+and challenges. This position paper underlines some of these
+emerging promises and threats, as well as their implications for
+researchers and scientists across the database community.
+
+Categories and Subject Descriptors
+K.4.1 [Public Policy Issues]
+privacy,
+regulation,
+transborder data flow, use/abuse of
+General Terms
+Design, Economics, Reliability, Experimentation, Security,
+Human Factors, Legal Aspects.
+
+Keywords
+data, Big Data, data mining, privacy, security, social media and
+networking, search engines
+
+1. Introduction
+Our time has come to be known as the age of Big Data [1]. As
+with the birth of any new era, the inception of this new age is of
+major cultural, scientific, political and economic significance. It is
+this cultural or anthropological element that renders a reflection
+on digital computing necessary, not only for the specialist but also
+for the (now largely wirelessly) wired world as such. This cultural
+milestone is, however, of particular interest to engineers insofar as
+this revolution, like many of those that preceded it, has been made
+possible by, among other important elements, the no doubt
+essential ingredient of their ingenuity.
+
+Therefore, in order to understand this new age in terms of some of
+its origins, it is useful to briefly recall the history of data storage
+From here on, this paper will examine more closely some specific
+consequences of this new age which bear most directly on the
+theory and practice of the data engineer, namely, the proliferation
+of data and the novel possibilities it affords.
+
+2. How Data Got Big
+
+Though humans have recorded data in various forms over many
+centuries such recording has, until recently, been stored in an
+analog format [2]. With the invention of the magnetic tape in the
+mid 1940s, the recording of and manipulation of data became
+possible since it allowed for the storing of analog and later digital
+data accessible in sequential mode. Magnetic tape was followed
+by magnetic drums and thence by magnetic disks with greater and
+greater data storage capacity and faster and faster access time.
+These devices made it possible to access vast swathes of data in
+random order, hence allowing storing, accessing and processing of
+larger and larger amounts of data.
+
+The electro-mechanical digital computers which started appearing
+around late 1930’s were quickly replaced by electronic devices
+with integrated circuits. Increased density of the circuitry was
+achieved by higher and higher levels of miniaturization and
+integration resulting in faster and smaller digital computer.
+[http://en.wikipedia.org/wiki/Computer] This set the stage for
+today’s concentration of processing power and data, making it
+possible to quickly process immense amounts of data gathered
+from multiple sources, the so-called Big Data, in a fraction of a
+second and derive interesting results.
+
+Over the past half century database technologies have continued
+to evolve, from the first one reported to be IDS released by GE
+running on GE235 computers [http://en.wikipedia.org/wiki/
+Database]. Along with the advances in hardware, a number of data
+models have been developed. The first was the hierarchical model
+with IBM’s IMS, most prominently and widely used in the 1960s
+and beyond. The network model was proposed as a replacement,
+followed by the relational model, which, though it appeared in
+1970s, was slow to catch on, becoming dominant only in the last
+decade of the twentieth century. It is now the most common
+model for new applications. The object model which was
+introduced in the 80s has not caught on for database application.
+Instead, the use of the object-relation model has bridged the
+mismatch between many existing application using the relational
+model and new needs where the object model is desired.
+However, the genesis of Big Data truly began with the evolution
+of the world wide web, which at its inception, was only one
+application of the internet among many. It is with the widespread
+adoption of the web that web-based applications began to
+proliferate, and it is principally these that have, in just over a
+decade, created the avalanche of data which is driving current
+economic and social phenomena and the novel issues which
+surround them.
+
+3.1 Search engines
+
+3. The Web Tsunami
+
+As we know the early search engines are extinct(2014). They are
+replaced by today systems, which have become corporations with,
+globally, the largest capitalizations. These search engines and
+soon to be released web based social networks (online social
+networks - OSN) have become the starting point for most internet
+interaction today.
+
+In the early days of the search engines a number of tests were
+done to determine the precision and recall of these systems [9],
+[10], [11]. The result of the first two series of tests illustrated that
+these search engines were not too developed and their recall and
+precision were fairly poor and the number of documents missed
+was considerable. The third tests, marked by the exit of veteran
+search engines from the early days of the web, as well as the
+beginnings of one which dominates today’s search market.
+However, the results of these tests illustrate that the newer search
+engines were still far from perfect. Figures 1 and 2 summarize the
+recall and precision for these three series of tests.
+
+Developed initially by and for scientists, the internet had been in
+use for more than a decade when the web was developed. The
+HTTP protocol to transmit the web traffic was an application of
+the internet protocol. Due to the lack of widespread technical
+skills the general population was locked out of the internet. The
+web with its graphical browser overcame this difficulty, making
+the internet available to the ordinary user.
+The extent and the potential of the web was quickly recognized;
+and the overwhelming amount of interest shown in the WWW by
+technical people and the business community alike was already
+evidenced by the over subscription to the first few meetings of the
+WWW conference. The first of such meetings, held in Geneva in
+May 1994, followed quickly by another in Chicago (Oct 1994)
+and in Darmstadt in (April 1995) laid some of the foundational
+ideas and outlined many of the promises which would allow for
+monetizing the internet via the web. These and other initiatives
+led to the dot-com craze towards the end of the twentieth century,
+as well as the accompanying financial bubble which led to the
+sobering realization that the web required more ‘know-how’ to
+become profitable.
+
+
+As early as 1945, in an article published in the Atlantic Monthly,
+Vannevar Bush put forward the idea of sharing knowledge
+electronically [3]. It took close to half a century for this idea to
+materialize in the form of the world-wide web [4].
+
+
+The priorities for the WWW communities and the need for
+‘navigation’ through it were addressed early in two workshops
+[5], [6]. The concept of navigating through the web and the early
+search engines were discussed in Darmstadt [7] and an idea of
+virtual library to fulfill the promise of shared information was
+presented during the America in the Age of Information forum
+held in Bethesda, Maryland [8].
+
+
+The web-search environment of those early years would hardly be
+recognizable today. In 1994, one of the first GUI browsers,
+Mosaic, had 97% of web-browser traffic. Netscape Navigator,
+created by Mosaic developers, quickly displaced it. The game
+heated up with Microsoft releasing their Internet Explorer (IE)
+while IBM came up with their own, short-lived browser.
+Integrated into the then current Windows operating system, IE
+gradually gained a third of the share, becoming the favoured
+browser of the new Windows web surfers. Currently there are five
+leading browsers with the respective share of the user base:
+Chrome (37%), Internet Explorer (21%), Firefox (17%), Safari
+(11%), Opera (4%) with the others browsers making up the rest of
+the share.
+
+
+During the Darmstadt workshop the idea of financing search
+engines was discussed in terms of adding small paid
+announcements in the margins of web pages at a cost of a few
+milli-cents per display. The concept of tailoring the announcement
+to the user was solely based on the current search terms. During
+that age of innocence, the thought of user profiling was still far
+from the minds of scientists, and was not once broached by any of
+the participants or the audience during this workshop.
+
+Validating the results of a series of tests such as those described
+above would be almost impossible today since search results for
+the same query typically generate tens of thousands of ‘matches’
+and since, except for a small fraction, the bulk of these matches
+are not accessible. Even in the accessible results, there are still
+duplicates since it appears that no attempt is being made to
+eliminate these as long as the web servers are not the same and
+spurious matches make up the majority of the accessible results.
+Many of the URLs link to unexpected pages or third party sites
+regardless of whether they have any relevant content.
+
+Many of these trends continue and indeed, most current search
+engines auto-correct or suggest completions for queries as they
+are being entered by the user, further obscuring and limiting the
+choices. The results are ranked giving sponsored links higher
+priority and appearing at the top. Since the behaviour evidence of
+most users suggests that only the first few pages of results are ever
+consulted, there is a further limitation in the subset of available
+indexed contents. Despite these drawbacks, search engines are a
+rich source of information and many of the ranking algorithms can
+be made to generate revenue for these commercial entities.
+
+4. On-line Systems and Privacy
+
+Robots and other such systems have been roving the web to
+discover new contents for their respective search engines since the
+advent of the Web. The recall and precision of the search engines
+as shown above have been variable. While the early academic
+search systems and their robots have either been commercialized
+or simply retired, others have emerged as a result of venturecapital investment with the aim of harvesting the web for profit.
+Not only are these search engines intrusive; some of them may not
+respect the Robots Exclusion protocol set up in the early days of
+WWW for keeping the robots out of 'private' web space
+(implemented via the file robot.txt). Malicious robots and their
+creators could use the robots.txt file to locate such restricted
+contents.
+
+Another issue is the use and abuse of 'do not track' directives in
+the browser (http://donottrack.us). The exact meaning of 'tracking'
+is now being questioned. Since web publicity is driven by tracked
+data and since the number and the reach of the players involved
+are significant, the rewards of continuing to track users renders
+any effort at self-regulation or legal oversight more difficult.
+It is sometimes said that search engines and on-line systems are
+the most daring and successful buccaneers in that they contain
+content which is either under copyright or intellectual property
+protection. However, in legal actions issuing from these new grey
+areas, many judges have held that the owner of the content, by not
+opting out, implicitly grants such systems the license to copy the
+pages. An analogy might be allowing anyone to walk into one’s
+house and remove its content if the door is not locked, the only
+difference being that in making a copy of the digital contents, the
+original is not 'stolen'.
+
+So for instance, when a legal challenge was brought against one of
+these parties for scanning and indexing millions of copyrighted
+books without the consent of the copyright holders, such actions
+were deemed to be covered by fair use laws. The rationale given
+for this was that, since the index could be used to allow the books
+to be discovered via the search engines, it is a benefit to society.
+Many search engines also cache web pages and their content,
+including images, without considering copyright-status, privacy or
+related issues. The burden is on the holders of copyrights to
+request that such results be removed, and the number of such
+requests is said to be in the millions. Provided the system removes
+such content flagged by copyrights' holders, current laws
+governing copyright actually protect search systems since they are
+said to provide merely 'inadvertent' access to such results.
+
+Compared with the penalties faced by ordinary users who share
+files (as evidenced by a recent legal proceeding [12]) it seems as
+though the courts and legal procedures are being used to scare the
+consumer rather than harnessing the emerging technology to make
+the contents available at a reasonable price.
+
+The most widely-reported and perhaps most important example of
+massive personal data collection occurs across the popular online
+social networks (OSN). These sites allow and even encourage
+users to post any and all personal information. In spite of
+warnings about the risks involved, most users are unaware of
+these warnings or how to set the correct permissions and share
+settings for their contents.
+
+The search for known persons using their email address is a
+feature which helps a user to connect to these persons in an OSN.
+This feature is convenient for users to quickly set up their network
+of acquaintances and at the same time creates a base for the new
+user to which they will frequently return: a commercial advantage
+for the OSNs. However, this tool can also be exploited. A
+malicious user could query one or more social network sites to
+validate a list of e-mail addresses obtained using questionable
+sources and databanks. By correlating the data from other sites a
+validated list and personal information obtained could be used for
+generating bulk personalised messages to be included in phishing
+and spam. In [13] the authors show how easy it is to take
+advantage of this common weakness. These techniques can be
+deployed on a large scale by an attacker to query OSNs for
+registered users and mine the results to collect publicly available
+personal information about these users. This can then be used for
+automated profiling.
+
+The combination of voluntarily posted personal information, its
+storage, the tracking of users’ interaction and linkage of data from
+various datasets is the core of the privacy problem. Recently, there
+have been cases where the OSN deliberately allowed leakage of
+personal information [14]. Some of these leaks were fixed only
+after negative publicity. Cases of clear misrepresentation about
+the privacy and sharing policy required lengthy and expensive
+regulatory action [15].
+
+The following is a slightly amended version of the terms of
+service (TOS) agreement from an OSN. For the sake of
+anonymity, the name of the organization has been replaced by
+XXXXX. Except for this change the rest of the text is verbatim.
+Since most users do not bother to click the link and read the
+agreement, they are not aware of what they are signing away.
+
+Furthermore, this site and most other sites require the user to agree to
+allow them to: collect, use, disclose, transfer and store the user’s
+information with third parties. (Incidentally, for this site, there is a
+conflict of this TOS and the advertised privacy policy!)  You acknowledge
+and agree that if you contribute, provide or make available any Content to
+the Site ("Your Content"), you hereby grant to XXXXX a non-exclusive,
+worldwide, perpetual, irrevocable, royaltyfree, transferable, sublicensable
+(through multiple tiers) right and license to use, reproduce, adapt,
+modify, distribute, translate, publish, create derivative works based on,
+perform, display and otherwise exploit Your Content, in whole or in part,
+in any media now known or hereafter developed, for any purpose
+whatsoever. You represent and warrant that you have all the rights, power
+and authority necessary to grant the foregoing license, and that all Your
+Content (i) does not infringe, violate, misappropriate or otherwise
+conflict with the rights of any third party, and (ii) complies with all
+applicable laws and regulations (foreign and domestic). In addition, Your
+Content must be accurate and truthful. XXXXX reserves the right to remove
+any of Your Content from the Site at any time if XXXXX believes in its sole
+discretion that it does not comply with this TOS. In addition, you agree
+that XXXXX may use your name and logo (whether or not you have made it
+available through the Site) for the purpose of identifying you as an
+existing or past customer of XXXXX both on the Site and in marketing and
+promotional materials.
+
+5. Big Data and Privacy
+
+Many of a person's daily activities generate a small amount of
+data which is stored and hence could be tracked. Using blogs, and
+OSNs, hundreds of millions of individuals knowingly share
+personal information with friends and perhaps inadvertently with
+strangers. The privacy settings of OSNs and other sites are
+usually not clear nor are they being used correctly by users [16].
+Furthermore the ubiquity of smart phones and GPS devices
+provide up to date location information on many people. These
+snippets of personal data from various sources may be linked and
+tracked to give a good picture of the person’s movement and
+activities, without the person's consent or even knowledge.
+
+Now, the use of the term Big Data varies and, though it is
+sometimes used to describe data such as those provided by users,
+at other times it is used to describe the analysis of this data. One
+usage covers the collection and mining of all new sources of data
+that is collected by a single organization. This could include such
+things as performance information on inventories or sick days; the
+data collection on these and subsequent analysis (mining) can
+allow for better management decisions. Before the coinage of the
+term Big Data, these features were commonly referred to as data
+warehousing and data mining.
+
+With increasing digitization, organizational structures have
+evolved to become dependent on the information systems [17].
+Without adequate privacy and security structures organizations
+become targets for exploitation, whether by hackers, criminals, or
+the organization's own employees, and these latter either by
+design or by omission. In spite of decades of developments and
+expanded resources, information systems are far from secure;
+indeed, the risks of cyber-attacks are getting worse [18]. Such
+cyber-attacks lead to the disruption of daily operations, loss of
+valuable lists, plans or secrets, public humbling and exposure to
+fraud.
+
+However, amalgamation of data from multiple heterogeneous
+organizations and the use of analysis on this data to create new
+interconnections among facts and people well beyond what would
+be possible with a single dataset, even a big one, is of concern to
+most observers [19]. Such large collections of data not only allow
+the perpetrations of new offences but imposes new restrictions on
+people’s rights using techniques such as filtering, blocking and
+surveillance.
+
+As reported in [20], [21] online identifiers such as IP addresses or
+badly anonymized data could be used to derive personal
+information. Online interactions produce a trail. These trails are
+recorded by internet service providers (ISP) and are retained for a
+period of time, ranging from a few weeks to a few months and
+even years, despite the lack of any legal requirement to do so.
+These traces can be combined with other data relating to the user
+to create a profile and thence to identify the person.
+The above case illustrates amply that big data can be used to
+create individual profiles and exploited for both innocuous and
+harmful purposes. It is probable that such derived profiles may not
+always be correct or verifiable. The analytics and models used
+could use a number of underlying assumptions; some of these
+assumptions may have a margin of error or could be outright
+erroneous and perhaps not applicable. There is always the chance
+of incorrect implementation and software errors. These profiles
+may be used for creating inequality and/or discrimination and
+deprive entire segments of the population access to services and
+products.
+
+In many online applications including OSNs most users are not
+aware of the underlying technology being used nor are they aware
+about the kind and extent of information that is being collected
+and stored, nor for how long. Any consent and agreement entered
+into by the user, while protecting the provider, is not always fair
+to the consumer; these agreements are written in impossible to
+read legalese and most users do not read and/or understand fully
+what they are accepting.
+
+One of the paradoxes of Big Data is that it is amalgamated many
+times by third parties who aggregate data from various sources;
+many times the first party ‘leaks’ these data to a third party [22] in
+exchange for payment. Data thus collected are analysed and
+reused according to algorithms and heuristics which are far from
+transparent, being hidden using legal means by appealing to the
+need for commercial secrecy [23]. The identities of the users are
+employed for targeted publicity [22]. Unfortunately, awareness of
+the practices and methodology used are often obtained only when
+whistle blowers expose some of these operations [24].
+Many of the most notable objections to the unregulated use of Big
+Data have been raised by European nations, who, given their
+histories, are perhaps more sensitive than North Americans to
+questions of the large scale invasion of privacy [25], [26], [27].
+According to this strain of thought, the personal dignity and
+integrity of the user is ignored when software processes their
+information. Such software, which lacks the social and legal
+sensibilities of a human, makes decisions based on aggregated Big
+Data taken out of context and has lost all its semantic content. The
+general privacy concerns raised by academics, civil libertarians
+and lawyers has finally pushed the U.S. in taking a second look at
+the privacy issue [28].
+
+In general most users, though they have very little control, are
+concerned about how the various data collectors use their personal
+information. Most users want to be explicitly asked for consent
+before any information is collected and stored. The requirement of
+obtaining a specific, informed and explicit time and use limited
+consent allows individuals to be in a position to give meaningful
+consent. Contrast this with a typical term of use policy that the
+user is required to agree to before accessing an on-line service (as
+for example the one given in the previous section).
+
+6. Online Systems and the Vulnerable
+
+Many cases of cyberbullying and harassment have been reported
+in the popular press. While bullying and harassment obviously
+pre-existed the web and OSNs, information technologies such as
+text messaging, recording and instant uploading features always
+readily accessible by smartphones have provided easy to use and
+easy to exploit media. As with older forms of bullying and
+harassment, anyone could be a victim of cyberbullying, however,
+children and youth are the most common perpetrators and targets
+[29].
+
+This use of the online media is of urgent concern of parents,
+police and the general population because of its increased
+prevalence and the fact that it has been implicated as a significant
+factor in a number of recent teen suicides.
+In the United States, a special law has been passed, the Children's
+Online Privacy Protection Act (COPPA) [30], which is meant to
+ensure that children under 13 years of age don't share their
+personal information on the Internet without the express approval
+of their parents. Since then, however, the dramatic rise in the
+number and use of mobile devices among children — according to
+some recent estimates up to seven hours a day — has effectively
+outdated this law.
+
+Another initiative has been the "safe harbor" provision designed to
+encourage increased industry self-regulation [31]. Under this
+provision, industry groups and others may ask the U. S. Federal
+Trade Commission (FTC) to approve self-regulatory guidelines
+that implement children’s privacy protections Companies that
+comply with the FTC-approved guidelines receive safe harbor
+status. Following a public comment period, the FTC has approved
+the kidSAFE Seal Program as a safe harbor program under the
+COPPA and the FTC's COPPA Rule [32].
+
+The kidSAFE Seal Program [33] is a private sector product seal of
+approval organization similar to the more familiar label such as
+UL on many everyday products [34]. The kidsSAfe organization
+is in the business of certifying companies and websites geared for
+children under 13 as being "kidSafe". Their primary focus is to
+review and certify products for "interactive" and "online safety".
+However, looking through the approved product list [35] of
+kidSAFE Seal Program (Feb 14, 2014), one does not see any of
+the currently popular OSNs. These OSNs are, in many cases, the
+primary media used in bullying and harassing cases that have been
+reported in the news media.
+
+Such programs seem to give a false sense of security to parents
+and a sense of satisfaction to politicians and bureaucrats for
+having done something. All this has accomplished is to set up
+more businesses and an overhead for those other businesses who
+seek such seal of approval.
+
+In Canada the current government has proposed an omnibus
+criminal bill C-13 popularly called the Cyber-bullying Bill [36]. It
+includes provisions for monitoring and recording internet traffic
+by ISPs and web sites. While it is evident the society and its law
+enforcement machine needs tools to fight online crime and cyber-
+bullying and harassment, this must be done without trampling on
+people's fundamental rights to privacy. C-13 proposes new
+investigative powers and its use by a large number of public
+officials is not subject to any requirements of accountability or
+reporting mechanism. From a privacy standpoint, the bill is
+further appalling since it gives the ISP and telecoms full immunity
+to disclose their customers' information without a warrant.
+
+A recent judgment of the Supreme Court of Canada[37] has
+effectively put a stop to the practice of internet service providers
+(ISP) from providing the coordinates of their subscribers to law
+enforcement without a judicial warrant. To date they were
+providing this information voluntarily without judicial oversight.
+This will put a damper in the legislative progress of bill C-13 and
+perhaps illustrates why Canada, unlike U.S.A is in the top 10
+democratic nations in the world according to a report from the
+Economist Intelligence Unit (http://pages.eiu.com/rs/eiu2/images/
+Democracy-Index-2012.pdf).
+
+7. The Concept of Privacy and LegislativeMeasures
+
+One of striking transformation that has accompanied the Big Data
+revolution is the way the collection and repurposing of data affect
+some of the most basic and fundamental concepts of democratic
+societies: the concepts of property, privacy and personhood. These
+three concepts are related and, in most legal systems stemming
+from the common law tradition — as, for example, the United
+Kingdom and Commonwealth countries, as well as the United
+States, though by no means limited to these — are rooted in ideas
+of the 17th century British philosopher John Locke. The most
+elementary concept of property stems from the fact that human
+beings are the possessors of their bodies [38]. Now it is on the
+basis of this elementary kind of property — one's own body, as
+well as its capacities — that all other property is founded. So, as
+Locke says, through 'the labour of my body and the work of my
+hands' — which are properly mine, I mix myself with nature and
+create things in the world or parts of the world that become my
+property. These things are not only mine while I am making or
+using them but indefinitely. This is what private property means,
+and since any property I acquire is property that I have earned
+through the labour of my body which is mine, I hold things justly,
+and both my moral and legal personhood are tied up with these
+things that I have made or done. To be a person is to be the owner
+of the things that are mine, or even the things that are me, those
+parts of the world I have mixed myself with and made my own.
+The concept of property rights has evolved to enable people to
+develop as individuals, and exchange fairly in the marketplace.
+The notion of copyright evolved from the concept of property
+applied to the intangible products of individuals as authors of such
+intangibles. Intangible property has the characteristic that it is
+sharable using appropriate technology.
+
+What is striking about the Big Data revolution is how little sense
+it makes to talk in this way about the labour of our bodies insofar
+as that labour is the sharing of data. Because this data is collected,
+stored and reused for an indefinite period of time by the
+uninitiated applications of second and third parties, it is as though
+one does not and even cannot know what parts of the world one is
+mixing one’s labour with, and one is utterly unable to lay claim to
+the fruits of this labour. This is well expressed in a description
+from a report on personal data by the World Economic Forum
+[39]. Unlike "the industrial-age model of the “consumer”" or the
+producer, "end users are vital and independent stakeholders in the
+co-creation and value exchange of services and experiences" [39].
+Thus, with this idea of an end-user as a mere co-creator of their
+personal data, a shift has occurred in the relations between the
+ownership of one’s labour, in the form of data (property), privacy
+and the individual (personhood), to create a "new asset class"[39].
+Since we are invited to think of personal information as an asset,
+indeed, as similar to "money" [39], the notion of that information
+as private begins to be eroded. Though one’s money is one’s
+private property, the sense of privacy herein is not at all
+equivalent to the notion of privacy when we speak of 'private'
+data.
+
+Privacy in this sense stems from the right to be left alone, to be
+free from being interfered with by others [40]. Privacy is tied to
+the concept of the home as the sphere of privacy: a person’s home
+is their castle. With the emergence of information technology, the
+domain of privacy has expanded to include control of personal
+data and how that data is controlled, edited, managed, deleted,
+used and communicated [41], [42]. Hence treating personal data
+as private property and having control of this property by being
+cognizant of the processing used by second and third parties is
+one of the legal avenues that is being used by certain legislative
+bodies. However, such an approach has issues in ‘marketing’ such
+data, providing a framework its legal use and handling of shared
+data.
+
+Issues of privacy raised by the processing of personal data have
+been addressed by various governments in different ways. In the
+European context, privacy is enshrined as a human right. In the
+context of data, the EU created in 1995 the Data Protection
+directive, a framework to balance privacy and unhindered flow of
+information [43]. This directive gives the individual the right to
+the data processing analytics used in processing his data [44].
+Recently a new directive is under discussion [44]. The salient
+feature of this directive expands on responsibility and
+accountability, consent, collection and use limitation, adequate
+notice of data breaches, right to the deletion of personal data,
+access to a copy of personal data, oversight and sanctions.
+The spirit of the new European directive is to require that
+information systems be designed with paramount importance
+given to the protection of privacy by setting the default level of
+privacy to high. As in the case of financial institutions, the
+directive calls for risk and impact assessment for any failure in the
+privacy protection mechanism. Another aspect that is addressed is
+the balance between the confidentiality of algorithms used in the
+related processing software and the right of the individual to
+access the logic of the processing and to manage their profile and
+to shape the results generated from their data.
+
+Data protection in the United States is a mix of legislation and
+associated regulation which, as pointed out above, relies heavily
+on industry self-regulation. While some Americans feel secure
+with their data in the hands of self-regulating private enterprises
+and most seem to prefer such forms of regulation to those
+legislated by their governmental agencies, it is not surprising that
+the United States lacks anything resembling the European
+directive. There do exist consumer-based efforts to allow users to
+'take charge' of their information and deploy it as an asset, sharing
+what they wish with corporations to mutual benefit [45] in a way
+quite similar to World Economic Forum's treatment of personal
+data as a new asset class. Such efforts, however, have limited
+ability to take punitive action in the case of data misuse, and, by
+leaving regulation in the hands of interested parties, gives only
+limited assurances regarding the effectiveness of such oversight.
+While examples such as the European directive might have
+sharper teeth, it remains unclear whether legislation emerging
+from such directives would close the gap between rights of
+corporations to collect and mine data and the rights of individuals
+to maintain ownership of their personhood in the sense of being
+able to 'manage their identity' [46].
+
+8. Defensive Measures
+
+In spite of these privacy concerns, most internet users are content
+with the status quo. Recognizing that it is not possible to turn back
+the clock, and unwilling to wait for legislation to have more
+transparency and accountability, other users have opted to take
+matter in their own hands. The best course of action is to be
+cognizant of the terms of service and the privacy policy of any
+online system before starting to use it. If more people take this
+fairly simple precaution and avoid sites that post TOS conditions
+like the ones given above, these sites would consider making
+changes. After all, they are not online for charity nor are their
+services free. If this was the case, they would not have become
+what they are today!
+
+There are a number of add-ons and plug-ins that can be used with
+the open-source independent Firefox browser. Some of the
+popular Firefox add-ons are given in Table 4. Some of these
+promote quicker loading of web pages, since for example ads are
+blocked; however this can come at the expense of quality and
+functionality. Unfortunately a single plug-in is not able to fully
+address all known privacy threats. Users who are concerned about
+higher online privacy, tend to install a number of add-ons.
+However, this in turn may lead to conflicts and likely slow
+loading as the browser loads and interacts with multiple add-ons.
+For example, adding NoScript may make a web site unusable
+unless the site is allowed to run scripts at least temporarily. Sites
+that are used frequently, for example a banking site, should be
+white-listed. Use and tune up of these add-ons clearly requires
+effort and understanding. A case in point is the use of AdBlock,
+which blocks frames; the solution calls for the user to configure
+AdBlock to allow frames from trusted sites as shown in Figure 3.
+Finding and installing such configuration setting is beyond the
+capability of most users.
+
+Because these add-ons require a further user action, only a small
+fraction of Firefox users have installed these to date; the most
+popular being ad-blockers though for the purposes of this article
+add-ons for proprietary browsers have been left out of account. A
+detailed experiment using some of the existing add-ons is reported
+in [47].
+When visiting a site, one can use the Ghostery’s option to find out
+what type of trackers are running on the web page and the cookies
+involved” These include advertising trackers used to deliver ads;
+analytics trackers which does the analysis for the web site
+publishers; beacons used for sharing information among sites;
+privacy trackers allow privacy policies. Widgets provide page
+functionalities, OSN buttons and comment forms.
+would be available outside the EU; this seems to be contrary to
+the spirit of the ruling. [50]
+
+Editorial response to this ruling was a specter of censorship; this
+is incomprehensible considering the fact that the search engine
+operators constantly censor results showing only a tiny fraction of
+the matches and giving prominence and higher priority to results
+that are most economically rewarding for the operators. These
+editors are either not cognizant of this selection practice or are
+ignoring it. Neither alternative is very flattering.
+
+9.2 British Columbia Class Action Suit
+
+Unfortunately, these defensive mechanisms are simply not within
+the technical capacity of the vast majority of users, and in any
+case, proprietary browsers may block the use of any such safeguards, while other websites may find ways to work around them.
+Safeguards on mobile devices are, at the moment, even more
+difficult to implement.
+
+9. Recent Developments
+
+Since the paper was written for the triple blind review just a few
+months ago, there have been several developments, some of
+which are reported here.
+
+9.1 European court ruling on right to be forgotten
+
+On May 13, 2014, a press release from the Court of Justice of the
+European Union (ECJ) in Luxembourg noted the following:
+“An internet search engine operator is responsible for the
+processing that it carries out of personal data which appear on
+web pages published by third parties
+
+Thus, if, following a search made on the basis of a person’s name,
+the list of results displays a link to a web page which contains
+information on the person in question, that data subject may
+approach the operator directly and, where the operator does not
+grant his request, bring the matter before the competent
+authorities in order to obtain, under certain conditions, the
+removal of that link from the list of results” [48]
+
+This ruling means that search engines operators can be required to remove
+data that are "inadequate, irrelevant or no longer relevant, or excessive
+in relation to the purposes for which they were processed and in the light
+of the time that has elapsed," said judges at the Luxembourg-based
+court. The ECJ noted, “the data subject’s rights also override, as a
+general rule, that interest of internet users”. [49] 
+
+The initial response of the defendant in this case was reluctance to
+comply; when a competitor acted, the defendant published an online form for
+link removal requests with the caveat that the results
+
+A British Columbia (BC) woman in Vancouver is instrumental in setting in
+motion a class action suit [51] against an OSN which used her name and/or
+image, without permission, in a “sponsored” ads to her on-line friends. The
+judge in allowing the suit to go ahead in BC ruled as follows ".. with the
+creation and growth of the internet the potential implications for a loss
+of privacy are greater than ever. The difficulty in proving quantifiable
+damage remains great for an individual whose privacy is lost, but the
+social harm can be monumental if the loss of privacy includes publicity
+over the internet with its almost infinite reach and timelessness. I
+conclude that the legislative conferral of exclusive jurisdiction on this
+Court for claims under the Privacy Act evidences both a legislative
+intention to override any forum selection clause to the contrary, and a
+strong public policy reason for not enforcing the Forum Selection Clause. I
+conclude that the plaintiff has shown strong cause why the Forum Selection
+Clause should not cause this Court to decline jurisdiction….” [52]
+
+
+Regardless of the outcome of such legal actions, it involves a long and
+expensive emotional draining experience to come to any conclusion and such
+legal actions have to be repeated in all jurisdictions. The problem is the
+assumption used by these multinational corporations to assume that opting
+in is automatic and that legal action must be taken in their preferred
+domestic courts, which tend to change from one TOS to another. Legal
+framework must allow users to opt in, selectively, for various features and
+the default is not to assume to be opted in. Multinational operating and
+generating global revenue must comply with the jurisdiction of their users
+and any dispute must be in the forum of the user.
+
+9.3 Meanwhile in the U. S. of A
+
+Data about users are collected at many points and there is an
+economic dimension to all this data as illustrated by some random
+users experiments reported recently [53]. The USA has been
+struggling over two decades examining data brokers which are
+companies that collect and resell personal information about
+consumers. Alas, little has been achieved in improving
+transparency and control by consumers. It is claimed that these
+brokers provide benefits to consumers; however, it is clear that the
+sought after benefits are to the businesses using the consumer data
+to improve their profitability. The report [54] recommends that
+legislation be considered to give data subjects access to their data
+and provide an option to ‘opt out’ of having their data used for
+marketing purposes. The opting out option seems ridiculous; the
+default should be ‘opt out’ and ‘opt in’ should be the option!
+
+It is reported recently that the US Department of Homeland
+Security is looking for software to automatically detect sarcasm in
+on line postings. [55]
+
+10. The way ahead
+
+When one compares the efforts expended and results obtained by
+the typical privacy settings of many OSNs, it is evident that they
+lag far behind what has been done for security. One reason is
+because security is tied to the concept of property, whereas
+privacy is an unknown area and it is considered to be subjective.
+Courts and the regulators have been too lenient on corporations
+who have abused consumer data and infringed on their privacy.
+Requests to remove objectionable content are frequently framed in
+terms of censorship, and since these data controlling corporations
+have deep pockets, ordinary consumers are often discouraged by
+the hurdles faced when attempting to reassert control over their
+data trails, and in the most tragic cases, seem to feel that the only
+way of dissociating themselves from their surrendered data is to
+resort to drastic measures. Another line of reasoning advanced
+against taking punitive action is that such actions would stifle
+innovation. The result of these kinds of reasoning is that, to the
+best of the published reports accessible by this author, not one
+corporate director or executive (including the now common Chief
+Information Officer) has been held accountable and been
+incarcerated for such misrepresentation and misuse. Finally, since
+every attempt to apply the regulations is contested, lawsuits
+stemming from abuse of privacy are frequently settled out of court
+[56].
+
+Protecting the privacy of internet and mobile device users is an
+urgent issue that needs the attention of the database community.
+Some have argued that end users (data subjects) have a legitimate
+stake in the collection of their data by third parties [57]. It is clear
+that self-regulation has not proven adequately effective in
+protecting privacy and security on the web. The intent of the Big
+Data collection and analyses is to identify the user, create a profile
+so as to tailor publicity to that user. The add-ons to browsers such
+as the “Do Not Track” directive could be easily ignored. Thus,
+measures to enforce strict adherence to regulation must be
+strengthened to allow ordinary data subjects to verify if these
+directives are being respected both to the letter and the spirit.
+Since the internet and web were initially developed for the sharing
+of data by a limited number of responsible researchers and some
+others, there was not much concern in those days about privacy
+and security. Even though the user base has expanded
+astronomically and is now much more diverse, the initial, 'wild
+west-like' security and privacy atmosphere largely remains to this
+day. Generally speaking, not enough thought is put into privacy
+and security issues. Software systems are rushed through the
+production line, even when they exhibit numerous design and
+security flaws; indeed, many of these software products include,
+as part of their design, trapdoors which are purposely or
+inadvertently left in in release versions. All these flaws are
+evidenced by the number and frequency of retroactively released
+security patches and upgrades which must be added on to software
+that has been pre-bundled when purchasing personal devices.
+
+The database community has been responsible for creating the
+data mining tools that power the Big Data revolution. This
+community must also take an active role in creating tools and
+analysis techniques to help users(data subjects) deal with the
+complexity of permission-settings and make it easier for users to
+ensure that online providers ‘forget’ their data, while sensibly
+limiting the kinds of analysis and profiling that can be done.
+Though tools such as FourthParty [58] exist, their use is beyond
+the capability of a large segment of users. Further, tools to analyse
+the data being gathered should be developed. Also, better use of
+privacy substitutes must be instituted. An example of a privacy
+substitute is the old ‘stamp’ type loyalty program. Such programs
+were more privacy preserving than their replacement by the
+current loyalty programs which require recording of all
+transactions and which can be used for profiling and tracking.
+The right of a data subjects to their data must be respected
+regardless of the method by which the data is obtained. Hence
+data subjects should be given meaningful and understandable
+warnings about whether and how their data is being collected and
+stored, and companies should obtain clear consent from
+responsible parties for such collection and use. Finally, data
+subjects must have the right to ask the deletion of all data by
+which they can be identified directly or indirectly. Any regulation
+aimed at protecting user privacy must be clearly written and
+parties providing content as well as third parties must adhere to
+these regulations; and then not only to the letter but also the spirit
+of the regulations and laws. A recent law passed in the lower
+house of the Brazilian legislature [59] illustrates an example of
+what may be coming.
+
+Websites and social media providers should work harder to
+publicize their contact information and ensure speedier responses
+to and adjudication of all objections raised by affected parties. It is
+in their interest to encourage the creation and maintenance of an
+ongoing independent oversight organization (ombudsman) that
+will have moral suasion as well as legal powers of enforcement,
+including the right to remove objectionable content. Such an
+oversight organization must include representatives from local
+populations and must not have any conflict of interests.
+There is a need to develop privacy enhancing technology to
+provide open models and algorithms by the database community.
+In light of the fact that most users may not be able to understand
+the analytics used in processing their data, technologies have to be
+developed to make such analytics transparent and allow the data
+to be coded so that it is clearly visible as to who can access what
+data and for what purpose. Visualization of such for ordinary
+mortals is yet another avenue of research.
+One of the reviewers of this triple-blind paper suggested that some
+solutions be offered; hence some ideas which this author would
+like to place, for all they are worth, in the public domain so to
+avoid a rush to patent these obvious solutions for private gain
+
+Default Opt-out Paradigm.
+
+This will require the consumers to be savvier and impose some
+reins on the on-line buccaneers with deep pockets.
+Data brokers have had an unrestricted field to exploit personal
+public and not so public data for private gain. Many pre-prepared
+contracts such as the TOS quoted above leave no possibility to opt
+out or allow a selection of level of opt-in. The benefits to the
+consumers, claimed to be derived by deep mining of personal data
+without the consent of the persons concerned, are of dubious
+validity. What the targeted ads and recommendations do is to
+create spam not only in emails but also on the web. Such spams
+waste time and are polluting in more than one sense.
+
+Some legal remedy such as the anti-spam law (http://lawslois.justice.gc.ca/eng/acts/E-1.6/index.html) that is to come into
+force in Canada on July 1, 2014 would regulate commercial email
+messages originating from commercial entities within the
+Canadian jurisdiction. Messages could only be sent to those who
+have opted in. There is a need for some regulation with real teeth
+in the international arena. Solutions proposed by search engines to
+limit the requests for the right to be forgotten only to the
+jurisdiction in question is an insult to the spirit of the request and
+fairness. The right to be forgotten should extend to archived data
+and propagated data from the source of the data. The later
+requires the obligatory maintenance of a data propagation trail
+which can be used for accountability and audit.
+
+Term of Service Agreements.
+
+Many terms of service(use) agreements are lengthy, in small fonts
+and comprised of many sections over many articles. Most internet
+users have no time to read or understand all implications.
+Suggestions to users is to decline any TOS that looks remotely
+like the one quoted above hoping that the sites which use such
+draconian TOS will wake up and count the number of declines
+and act on it. Furthermore, there must be the right to be forgotten
+and clearing up of archives and propagated data from services
+such as cited above. Legal requirements for a mandatory expiry
+of stored data must be enacted and enforced.
+
+Sharing and Privacy Option
+
+A clear picture of what is being shared and what are the privacy
+options of each piece of personal information on web site of OSN
+and other on-line sites that a consumer uses should be provided.
+Features such as meaning of each privacy and sharing feature
+must be clearly shown using graphics whenever possible.
+
+End User Initiated Data Rental and New Genre of Data Brokers
+
+A new trend could be to empower the data subject (end user) to
+collect data at his/her end; then using appropriate anonymous
+identification rent such data to a new genre of data brokers. The
+data would be the property of the data subject; and who can
+terminate the rental agreement at any time. These new genre of
+data brokers would have to be more responsible in allowing the
+data subject to withdraw his bank of data at any time.
+Unless the current open source browsers develop features to easily
+audit cookies and allow easy means of blocking cookies and
+analytics by default, there is an urgent need to develop open
+source browsers, which are designed for protecting personal
+information. If the data generated by the user is to be reclaimed,
+the browser must help in limiting the leakage of personal
+information and optionally put it under the control of the data
+object rather than third parties and data brokers.
+These and other concrete steps are necessary to ensure that this
+new digital age which we are entering, the Age of Big Data, does
+not, despite all of the bright lights of its manifold screens, descend
+into a dark age.
+
+11. Acknowledgments
+
+The author likes to acknowledge the valuable discussions with and the
+contribution of Drew Desai (Univ. of Ottawa); also, those of many
+researchers cited and perhaps missed; these have been valuable in preparing
+this article. All the ideas for short- and longterm solutions are, for what
+they are worth, hereby placed in the public domain away from the danger of being patented by greedy
+corporations and their CEOs. As we know, ideas are the ones that
+could be implemented. Unfortunately, most patents usurp ideas
+for private gain instead of public good
+
+12. References
+
+[1] "Data, data everywhere" The Economist, Special Report,
+February 27, 2010.
+
+[2] James Gleick, The Information: a History, a Theory, a Flood.
+Pantheon, New York, 2011.
+
+[3] http://www.theatlantic.com/magazine/archive/1945/07/as-wemay-think/303881/
+
+[4] A Little History of the World Wide Web,
+http://www.w3.org/History.html
+
+[5] Bipin C. Desai, ``Report of the Navigation Issues Workshop'',
+Computer Networks and ISDN Systems, Vol. 27-2, November
+1994, pp. 332-333. (Earlier version available from:
+http://users.encs.concordia.ca/~bcdesai/web-publ/navigationissues.html)
+
+[6] Robert Caillau, Bipin C. Desai, ``Report of the Priorities
+Workshop'', Computer Networks and ISDN Systems, Vol. 27-2,
+November 1994, pp. 334-336. (Earlier version available from:
+http://users.encs.concordia.ca/~bcdesai/web-publ/priorityissues.html)
+
+[7] Bipin C. Desai, (ed) ``Proceedings of the WWW III Workshop
+on Web-wide Indexing/Semantic Header or Cover Page'',
+Darmstadt, Germany, April 1995, also
+http://www.igd.fhg.de/www/www95/proceedings/workshops/works
+hop-A/workshop-A.ps
+
+[8] Bipin C. Desai, ``Indexing and Searching Virtual Libraries'',
+An invited refereed white paper prepared for the CIC-Forum on
+'America in the Age of Information', in Compendium of Draft
+White Papers, Bethesda, MD, July, 1995, pp. 87-90,
+http://users.encs.concordia.ca/~bcdesai/web-publ/www3wrkA/workshop-a.html
+
+[9] http://users.encs.concordia.ca/~bcdesai/test-of-indexsystems.html
+
+[10] http://users.encs.concordia.ca/~bcdesai/test-of-indexsystems-revisited.html
+
+[11] http://users.encs.concordia.ca/~bcdesai/rerevisit.pdf
+
+[12] TekSavvy ordered to ID alleged movie downloaders
+http://www.cbc.ca/news/technology/teksavvy-ordered-to-idalleged-movie-downloaders-1.2546477
+
+[13] Marco Balduzzi, Christian Platzer, Thorsten Holz, Engin
+Kirda, Davide Balzarotti, and Christopher Kruegel, “Abusing
+Social Networks for Automated User Profiling” Research Report
+RR-10-233 - March 3, 2010
+
+[14] Emily Steel, Jessica E. Vascellaro “Facebook, MySpace
+Confront Privacy Loophole”, Wall Street Journal, May 21, 2010
+available
+at:
+http://online.wsj.com/article/SB100014240527487045131045752
+56701215465596.html
+
+[15] “Myspace Settles FTC Charges That It Misled Millions of
+Users About Sharing Personal Information with Advertisers”,
+May 8, 2012, http://ftc.gov/opa/2012/05/myspace.shtm
+
+[16] Yabing Liu, Krishna P. Gummadi, Balachander
+Krishnamurthy, Alan Mislove, “Analyzing Facebook Privacy
+Settings: User Expectations vs. Reality”, Proceedings of IMC
+2011, November 2011
+
+[17] Risk and responsibility in a hyper connected world:
+Implications for enterprises, Jan 2014,
+http://www.mckinsey.com/insights/business_technology/risk_and
+_responsibility_in_a_hyperconnected_world_implications_for_ent
+erprises
+
+[18] Hackers Took Sneaky Path Into Target Customers’ Wallets
+http://www.forbes.com/sites/moneybuilder/2014/01/24/this-weekin-credit-card-news-how-thieves-hacked-target-danger-of-using-adebit-card/
+
+[19] Balachander Krishnamurthy, Konstantin Naryshkin, Craig
+Wills, “Privacy leakage vs. Protection measures: the growing
+disconnect”, Web 2.0 Security and Privacy Workshop, May 2011
+
+[20] A Face Is Exposed for AOL Searcher No. 4417749,
+http://www.nytimes.com/2006/08/09/technology/09aol.html?page
+wanted=all
+
+[21] Balachander Krishnamurthy and Craig Wills “On the
+Leakage of Personally Identifiable Information Via Online Social
+Networks”, Proceedings of ACM SIGCOMM Workshop on
+Online Social Networks, August 2009
+
+[16] Yabing Liu, Krishna P. Gummadi, Balachander
+Krishnamurthy, Alan Mislove, “Analyzing Facebook Privacy
+Settings: User Expectations vs. Reality”, Proceedings of IMC
+2011, November 2011
+
+[22] Jonathan R. Mayer, John C. Mitchell, “Third-Party Web
+Tracking: Policy and Technology’, Proc. IEEE Symposium on
+Security and Privacy, 2012, also available from:
+https://cyberlaw.stanford.edu/files/publication/files/trackingsurvey
+12.pdf
+
+[23] Neil M. Richards, Jonathan H. King, “Three Paradoxes of
+Big data”, in Big Data and Privacy, Making End Meet, Stanford,
+CA, Sept, 2013, pp102-105
+
+[24] The NSA Files, http://www.theguardian.com/world/the-nsafiles
+
+[25] A Acquisti, “The Economics of Personal Data and the
+Economics of Privacy”, 2010,
+http://www.oecd.org/sti/ieconomy/46968784.pdf
+
+[26] “The 2013 OECD Privacy Guidelines”,
+http://www.oecd.org/sti/ieconomy/2013-oecd-privacyguidelines.pdf
+
+[27] Peter Leonard , “Big Data Analytics: Evolving Business
+Models and Global Privacy Regulation”, Making End Meet,
+Stanford, CA, Sept, 2013, pp.65-69
+
+[28] New York Times Editorial Board, “A Second Front in the
+Privacy Wars”,
+http://www.nytimes.com/2014/02/24/opinion/a-second-front-inthe-privacy-wars.html?hp&rref=opinion
+
+[29] Cyberbullying and the Non-consensual Distribution of
+Intimate Images, Report to the Federal/Provincial/Territorial
+Ministers Responsible for Justice and Public Safety, June 2013,
+ISBN 978-1-100-23118-1
+
+[30] http://www.ftc.gov/news-events/media-resources/protectingconsumer-privacy/kids-privacy-coppa
+
+[31] http://www.ftc.gov/news-events/press-releases/2013/09/ftcseeks-public-comment-kidsafe%E2%80%99s-proposed-safeharbor-program
+
+[32] http://www.ftc.gov/news-events/press-releases/2014/02/ftcapproves-kidsafe-safe-harbor-program
+
+[33] (http://www.kidsafeseal.com/aboutourprogram.html)
+
+[34] http://www.ul.com another business
+
+[35] http://www.kidsafeseal.com/certifiedproducts.html
+
+[36] An Act to amend the Criminal Code, the Canada Evidence
+Act, the Competition Act and the Mutual Legal Assistance in
+Criminal Matters Act, available at:
+http://www.parl.gc.ca/HousePublications/Publication.aspx?Langu
+age=E&Mode=1&DocId=6311444
+
+[37] http://scc-csc.lexum.com/scc-csc/scccsc/en/item/14233/index.do
+
+[38] John Locke, Two Treatises on Government [1693],
+Everyman's Library
+
+[39] World Economic Forum, "Personal Data: The Emergence of
+a New Asset Class", January 2011. http://www3.weforum.org/
+docs/WEF_ITTC_PersonalDataNewAsset_Report_2011.pdf
+
+[40] S. Warre, L. Brandeis, “The Right to Privacy”, Harvard Law
+Review, 4-5, pp 193-220.
+
+[41] Alan F. Westin, Privacy and Freedom, The Bodley Head,
+London, 1967
+
+[42] Alan F. Westin, Michael A. Baker, Databanks in a free
+society, Quadrangle Books, Chicago, 1972
+
+[43] “OECD Guidelines on the Protection of Privacy and
+Transborder Flows of Personal Data”
+http://www.oecd.org/sti/ieconomy/oecdguidelinesontheprotecti
+onofprivacyandtransborderflowsofpersonaldata.htm
+
+[44] Niel van Dijk, “Property, privacy and personhood in a world
+of ambient intelligence”, Ethic and Information Technology, 12-1,
+pp57-69
+
+[45] Doc Searls, The Intention Economy: When Customers Take
+Charge, Boston: Harvard Business Review Press, 2012.
+
+[46] Ira Rubinstein, "Big Data: The End of Privacy or a New
+Beginning?", International Data Privacy Law, 2013, pp. 1-14,
+http://idpl.oxfordjournals.org/content/early/2013/01/24/idpl.ips03
+6.full.pdf
+
+[47] Delfina Malandrino, et al. "Privacy Awareness about
+Information Leakage: Who knows what about me?", Proceedings
+of the Workshop on Privacy in the Electronic Society, November
+2013 available from
+http://www2.research.att.com/~bala/papers/wpes13.pdf
+
+[48]http://curia.europa.eu/jcms/upload/docs/application/pdf/201405/cp140070en.pdf
+
+[49] http://www.cbc.ca/news/technology/google-must-respectright-to-be-forgotten-1.2641000
+
+[50] http://bits.blogs.nytimes.com/2014/05/30/google-takes-stepsto-comply-with-right-to-be-forgotten-ruling/?_php=true&_type
+=blogs&_r=0
+
+[51] http://www.cbc.ca/news/ canada/british-columbia/facebookclass-action-lawsuit-launched-by-vancouver-woman-1.2660461
+
+[52]https://www.documentcloud.org/documents/1175641-judgegriffin-re-douez-v-facebook-inc-05-30.html
+
+[53] http://www.bbc.com/future/story/20140509-how-much-isyour-facebook-worth
+
+[54] http://www.ftc.gov/system/files/documents/reports/databrokers-call-transparency-accountability-report-federal-tradecommission-may-2014/140527databrokerreport.pdf
+
+[55] US Secret Service seeks Twitter sarcasm detector
+http://www.bbc.com/news/technology-27711109
+
+[56] Deliberation No. 2013-420 of the Sanctions Committee of
+CNIL imposing a financial penalty against Google Inc. available
+from: http://www.cnil.fr/fileadmin/documents/en/D2013420_Google_Inc_EN.pdf
+
+[57] Justin Brookman, G. S. Hans, “Why Surveillance Matters;
+Surveillance as a De Facto Privacy Harm”, Big Data and
+Privacy, Making End Meet, Stanford, CA, Sept, 2013, pp. 11-13
+
+[58] http://fourthparty.info/
+
+[59] The net closes: Brazil’s magna carta for the web,
+http://www.economist.com/news/americas/21599781-brazilsmagna-carta-web-net-closes
+
